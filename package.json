@@ -1,0 +1,37 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start ./bin/books",
+    "dev": "pm2 start books --watch",
+    "restart": "pm2 restart books",
+    "stop": "pm2 stop books",
+    "down": "babel-node ./practice/download.js",
+    "download": "pm2 start ./practice/download.js",
+    "database": "babel-node ./practice/initDataBase.js"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "basic-auth": "^1.0.3",
+    "body-parser": "~1.13.2",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "express-session": "^1.13.0",
+    "front-matter": "^3.0.1",
+    "iconv-lite": "^0.4.23",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.2",
+    "morgan": "~1.6.1",
+    "node-schedule": "^1.3.1",
+    "node-yaml": "^3.1.1",
+    "query-string": "^6.2.0",
+    "redis": "^2.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "serve-favicon": "~2.3.0"
+  }
+}

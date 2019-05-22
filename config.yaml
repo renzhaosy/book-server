@@ -1,0 +1,6 @@
+# config for download
+
+jobTime: 
+  hour: 10
+  minute: 0
+
