@@ -58,7 +58,7 @@ router.get('/checkExport', async function(req, res) {
 router.get('/download', async function(req, res) {
   try {
     const { name } = req.query
-    const filePath = path.resolve(`./books/${name}.txt`)
+    const filePath = path.resolve(`../books/${name}.txt`)
     var stat = fs.statSync(filePath)
     res.writeHead(200, {
       'Content-Type': 'application/octet-stream',
